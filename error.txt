@@ -1,0 +1,24 @@
+G: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.1.112.52:5001
+Press CTRL+C to quit
+127.0.0.1 - - [31/Jul/2026 18:01:04] "GET / HTTP/1.1" 302 -
+Login ROUTE HIT
+127.0.0.1 - - [31/Jul/2026 18:01:04] "GET /login HTTP/1.1" 200 -
+Login ROUTE HIT
+127.0.0.1 - - [31/Jul/2026 18:01:10] "GET /login HTTP/1.1" 200 -
+Login ROUTE HIT
+127.0.0.1 - - [31/Jul/2026 18:01:13] "POST /login HTTP/1.1" 302 -
+[DEBUG] Meraki module loaded
+[DEBUG] Creating Meraki client
+127.0.0.1 - - [31/Jul/2026 18:01:16] "GET /professor/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2026 18:01:38] "GET /professor/meraki-multi-snapshot/Q2GV-72EM-Z2JE?subject=SS HTTP/1.1" 200 -Error on request:
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\serving.py", line 294, in write
+    assert isinstance(data, bytes), "applications must write bytes"
+AssertionError: applications must write bytes

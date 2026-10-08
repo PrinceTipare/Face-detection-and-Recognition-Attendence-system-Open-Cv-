@@ -1,0 +1,38 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+anpr_cuda/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large datasets / student images
+Student/
+class/
+Result/
+
+# Model files
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.pickle
+
+# Generated images/videos
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+
+# Logs / temporary files
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
